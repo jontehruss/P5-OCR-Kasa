@@ -1,8 +1,15 @@
-import logo from "../assets/logo.svg";
-import logoFooter from "../assets/logo-footer.svg";
-import TopBannerImg from "../assets/background.jfif";
-import testDatas from "../datas/logements.json";
+// Import components
+import Header from "./Header.jsx";
+import ItemCard from "./ItemCard.jsx";
+import Footer from "./Footer.jsx";
+
+// Import Style
 import "../styles/App.css";
+import TopBannerImg from "../assets/img-banner-a-accueil.png";
+
+// Import Datas
+import testDatas from "../datas/logements.json";
+
 
 function App() {
   return (
@@ -12,27 +19,7 @@ function App() {
       <Footer />
     </div>
   );
-}
-
-function Header() {
-  return (
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <Nav />
-    </header>
-  );
-}
-
-function Nav() {
-  return (
-    <nav>
-      <ul className="Nav-items">
-        <li>Accueil</li>
-        <li>À Propos</li>
-      </ul>
-    </nav>
-  );
-}
+};
 
 function Main() {
   return (
@@ -51,12 +38,12 @@ function Main() {
       <SectionCatalog />
     </main>
   );
-}
+};
 
 function SectionCatalog() {
   return (
     <section className="App-catalog">
-      <TestDatas />
+      {/* <TestDatas /> */}
       <ItemCard />
       <ItemCard />
       <ItemCard />
@@ -65,10 +52,9 @@ function SectionCatalog() {
       <ItemCard />
     </section>
   );
-}
+};
 
 console.log(testDatas);
-
 function TestDatas() {
   return (
     <ul>
@@ -82,26 +68,7 @@ function TestDatas() {
       ))}
     </ul>
   );
-}
+};
 
-function ItemCard() {
-  return (
-    <div className="Item-card">
-      <picture>
-        <span>Titre de la location</span>
-      </picture>
-    </div>
-  );
-}
-
-function Footer() {
-  return (
-    <footer className="App-footer">
-      <img src={logoFooter} className="Footer-logo" alt="logo" />
-      <picture></picture>
-      <p>© 2020 Kasa. All rights reserved</p>
-    </footer>
-  );
-}
 
 export default App;

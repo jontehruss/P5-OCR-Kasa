@@ -1,0 +1,19 @@
+.Item-card {
+    display:flex;
+    width: 28%;
+    height: 340px;
+    border-radius: 10px;
+    margin: 30px;
+    background-color: #ff6060;
+  }
+  
+  .Img-item-card {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* width: 28%; */
+    height: 340px;
+    border-radius: 10px;
+    margin: 30px;
+    object-fit: cover;
+  }

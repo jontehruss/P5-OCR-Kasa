@@ -4,48 +4,11 @@
   flex-direction: column;
   max-width: 1440px;
   margin: auto;
-  /* border: solid red; */
 }
 
 .App-logo {
   height: 15vmin;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    /* animation: App-logo-spin infinite 20s linear; */
-  }
-}
-
-.App-header {
-  padding: 50px 15px;
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
-  font-size: calc(10px + 2vmin);
-  min-height: 10vh;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content:  space-between;
-
-
-}
-
-.Nav-items {
-  /* border: solid red; */
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-
-}
-
-.Nav-items > li {
-  margin: 10px;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 .App-main {
@@ -62,9 +25,6 @@
   min-height: 25vh;
   color: white;
   opacity: 0.6;
-  /* background-color: #282c34a7; */
-  /* object-fit: fill; */
-  /* border: solid red; */
 }
 
 .App-catalog{
@@ -79,41 +39,3 @@
   border-radius: 25px;
 }
 
-.Item-card {
-  display:flex;
-  width: 28%;
-  height: 340px;
-  border-radius: 10px;
-  margin: 30px;
-  background-color: #ff6060;
-  /* border: solid red; */
-}
-
-.Img-item-card {
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  /* width: 28%; */
-  height: 340px;
-  border-radius: 10px;
-  margin: 30px;
-  object-fit: cover;
-}
-
-.App-footer {
-  color: white;
-  background-color: #282c34;
-}
-
-.Footer-logo {
-  padding-top: 50px; 
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
