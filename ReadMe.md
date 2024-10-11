@@ -8,6 +8,7 @@ npm start
 npm install -g sass
 
 3. Structure de l'app
+``` shell
 ├───assets
 │   └─── Images et fichiers
 ├───components
@@ -16,3 +17,4 @@ npm install -g sass
 │   └─── Fichier de données au format JSON pour simuler une API
 └───styles
    └─── Fichiers de style par composant
+```
