@@ -1,11 +1,14 @@
 1. Générer l'application
+``` shell
 npx create-react-app kasa
 cd kasa
 npm start
-
+```
 
 2. Installer le compilateur Sass
+``` shell
 npm install -g sass
+```
 
 3. Structure de l'app
 ``` shell
