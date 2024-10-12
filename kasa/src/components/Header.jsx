@@ -21,8 +21,8 @@ function Nav() {
     return (
         <nav>
             <ul className="Nav-items">
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">À Propos</a></li>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/about">À Propos</a></li>
             </ul>
         </nav>
     );

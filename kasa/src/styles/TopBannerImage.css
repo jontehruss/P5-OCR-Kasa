@@ -1,0 +1,18 @@
+/* :root {
+  --img-path: url('../assets/img-banner-a-propos.png'),
+} */
+
+.Top-pic-banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 25px;
+  min-height: 25vh;
+  color: white;
+  opacity: 0.6;
+  background-size: cover;
+  background-position: center;
+  /* background-image: var(--img-path); */
+  background-image: url('../assets/img-banner-a-propos.png');
+  /* background-image: url('../assets/img-banner-a-accueil.png'); */
+}

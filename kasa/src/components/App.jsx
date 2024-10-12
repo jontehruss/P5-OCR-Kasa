@@ -1,72 +1,37 @@
+// Import pour gestion des routes (client-side)
+import * as React from "react";
+
 // Import components
 import Header from "./Header.jsx";
-import ItemCard from "./ItemCard.jsx";
 import Footer from "./Footer.jsx";
 
-// Import Style
-import "../styles/App.css";
-import TopBannerImg from "../assets/img-banner-a-accueil.png";
+// Import Pages
+import Home from "../pages/Home.jsx"
+import About from "../pages/About.jsx"
 
-// Import Datas
-import testDatas from "../datas/logements.json";
+// Import Style
+import "../styles/App.css"; //! il faudra appeller le fichier sass 
+import Place from "../pages/Place.jsx";
+
 
 
 function App() {
   return (
     <div className="App">
+      {/* <h1>Hey from App component</h1> */}
+      
       <Header />
-      <Main />
+
+      {/*  ! Voir comment injecter les composants via les routes à cet endroit */}
+
+      <Home />
+
+      <About />
+
+      <Place />
+
       <Footer />
     </div>
-  );
-};
-
-function Main() {
-  return (
-    <main className="App-main">
-      {/* Voir s'il faut laisser le style dans le js plutôt que dans le css */}
-      <div
-        className="Top-pic-banner"
-        style={{
-          backgroundImage: `url(${TopBannerImg})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <h1>Chez vous, partout et ailleurs</h1>
-      </div>
-      <SectionCatalog />
-    </main>
-  );
-};
-
-function SectionCatalog() {
-  return (
-    <section className="App-catalog">
-      {/* <TestDatas /> */}
-      <ItemCard />
-      <ItemCard />
-      <ItemCard />
-      <ItemCard />
-      <ItemCard />
-      <ItemCard />
-    </section>
-  );
-};
-
-console.log(testDatas);
-function TestDatas() {
-  return (
-    <ul>
-      {testDatas.map((logement) => (
-        <li>
-          <div>
-            <img src={logement.cover} alt={logement.description} className="Img-item-card"></img>
-            <h2>{logement.title}</h2>
-          </div>
-        </li>
-      ))}
-    </ul>
   );
 };
 

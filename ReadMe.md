@@ -18,6 +18,13 @@ npm install -g sass
 │   └─── Composants fonctionnels
 ├───datas
 │   └─── Fichier de données au format JSON pour simuler une API
+├───pages
+│   └─── Pages '(composants)' de l'App 
 └───styles
    └─── Fichiers de style par composant
+```
+
+4. Installer "React-Router-Dom" pour la gestion du routing (client-side")
+``` shell
+cd kasa npm install react-router-dom
 ```

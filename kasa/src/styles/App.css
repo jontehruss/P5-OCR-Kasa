@@ -6,36 +6,3 @@
   margin: auto;
 }
 
-.App-logo {
-  height: 15vmin;
-  pointer-events: none;
-}
-
-.App-main {
-  background-color:rgb(255, 255, 255);
-  margin: 0px 15px;
-}
-
-
-.Top-pic-banner{
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 25px;
-  min-height: 25vh;
-  color: white;
-  opacity: 0.6;
-}
-
-.App-catalog{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: #f6f6f6;
-  color: white;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  border-radius: 25px;
-}
-
