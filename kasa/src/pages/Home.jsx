@@ -8,7 +8,6 @@ import "../styles/Home.css"
 // Import Datas
 import testDatas from "../datas/logements.json"
 
-
 export default Home;
 
 function Home() {
@@ -44,7 +43,7 @@ function SectionCatalog() {
 
 console.log(testDatas);
 //! Voir pour utiliser UseState pour la gestion des données
-// Nécessaire pour le carousel
+//! Nécessaire pour le carousel
 // function TestDatas() {
 //     return (
 //         <ul>

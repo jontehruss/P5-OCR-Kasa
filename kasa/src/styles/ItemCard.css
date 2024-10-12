@@ -1,19 +1,37 @@
+.Item-div {
+  /* border: solid red;
+  display : flex;
+  flex-direction: row; 
+  flex-wrap: wrap; */
+}
+
+.Item {
+  /* height : 300px;
+  width: 28%;
+  object-fit: cover;
+  margin: 25px; */
+}
+
+.Item > a {
+  width: 28%;
+}
+
 .Item-card {
-    display:flex;
-    width: 28%;
-    height: 340px;
-    border-radius: 10px;
-    margin: 30px;
-    background-color: #ff6060;
-  }
-  
-  .Img-item-card {
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    /* width: 28%; */
-    height: 340px;
-    border-radius: 10px;
-    margin: 30px;
-    object-fit: cover;
-  }
+  display: flex;
+  width: 28%;
+  height: 340px;
+  border-radius: 10px;
+  margin: 30px;
+  background-color: #ff6060;
+}
+
+.Img-item-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 28%;
+  height: 340px;
+  border-radius: 10px;
+  margin: 30px;
+  object-fit: cover;
+}
