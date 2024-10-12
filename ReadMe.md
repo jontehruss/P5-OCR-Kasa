@@ -19,7 +19,7 @@ npm install -g sass
 ├───datas
 │   └─── Fichier de données au format JSON pour simuler une API
 ├───pages
-│   └─── Pages '(composants)' de l'App 
+│   └─── Composants pages
 └───styles
    └─── Fichiers de style par composant
 ```
