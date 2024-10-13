@@ -1,0 +1,37 @@
+// import des variables et mixins
+@import 'variables';
+@import 'mixins';
+
+.Wrap {
+    // border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.Wrap-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: $primary-color;
+    cursor: pointer;
+  
+    h2 {
+      font-size: 1.2rem;
+      margin: 0;
+      color: $secondary-color;
+    }
+  
+    svg {
+      font-size: 1.5rem;
+      color: $secondary-color;
+    }
+  }
+
+.Wrap-content {
+    padding: 15px;
+    // background-color: #f9f9f9;
+    color: $text-color;
+    font-size: 1rem;
+}

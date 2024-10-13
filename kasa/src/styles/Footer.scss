@@ -1,0 +1,12 @@
+// import des variables et mixins
+@import 'variables';
+@import 'mixins';
+
+.App-footer {
+    color: white;
+    background-color: $fourth-color;
+  }
+  
+  .Footer-logo {
+    padding-top: 50px; 
+  }

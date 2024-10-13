@@ -3,10 +3,10 @@ import TopBannerImage from "../components/TopBannerImage";
 import ItemCard from "../components/ItemCard";
 
 // Import Style 
-import "../styles/Home.css"
+import "../styles/Home.scss"
 
 // Import Datas
-import testDatas from "../datas/logements.json"
+import logements from "../datas/logements.json";
 
 export default Home;
 
@@ -14,11 +14,11 @@ function Home() {
     return (
         <Main />
     )
-}
+};
 
 function Main() {
     return (
-        <main className="App-main">
+        <main className="Home-main">
             <TopBannerImage />
             <SectionCatalog />
         </main>
@@ -29,19 +29,16 @@ function Main() {
 
 function SectionCatalog() {
     return (
-        <section className="App-catalog">
-            {/* <TestDatas /> */}
-            <ItemCard />
-            <ItemCard />
-            <ItemCard />
-            <ItemCard />
-            <ItemCard />
-            <ItemCard />
+        <section className="Home-catalog">
+            {/* Boucle sur chaque logement dans le tableau logements */}
+            {logements.map((logement) => (
+                <ItemCard key={logement.id} logement={logement} />
+            ))}
         </section>
     );
 };
 
-console.log(testDatas);
+
 //! Voir pour utiliser UseState pour la gestion des données
 //! Nécessaire pour le carousel
 // function TestDatas() {

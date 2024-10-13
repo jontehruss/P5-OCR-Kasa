@@ -12,7 +12,7 @@ import About from "../pages/About.jsx"
 // import Place from '../pages/Place';
 
 // Import Style
-import "../styles/App.css"; //! il faudra appeller le fichier sass 
+import "../styles/App.scss"; //! il faudra appeller le fichier sass 
 import Place from "../pages/Place.jsx";
 
 function App() {

@@ -1,5 +1,5 @@
 // Import Style
-import "../styles/Header.css";
+import "../styles/Header.scss";
 
 // Import Assets
 import logo from "../assets/logo.svg";

@@ -1,5 +1,5 @@
 // Import Style
-import "../styles/Footer.css"
+import "../styles/Footer.scss"
 
 // Import Assets
 import logoFooter from "../assets/logo-footer.svg";

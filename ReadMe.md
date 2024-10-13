@@ -28,3 +28,8 @@ npm install -g sass
 ``` shell
 cd kasa npm install react-router-dom
 ```
+
+5. Installer "Font-Awesome" pour la mise en forme
+```shell 
+npm install @fortawesome/react-fontawesome @fortawesome/free-solid-svg-icons
+```

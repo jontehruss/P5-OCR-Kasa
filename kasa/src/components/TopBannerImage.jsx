@@ -1,6 +1,6 @@
 // Import Style
-import "../styles/App.css"; //! il faudra appeller le fichier sass 
-import "../styles/TopBannerImage.css"
+import "../styles/App.scss"; //! il faudra appeller le fichier sass 
+import "../styles/TopBannerImage.scss"
 
 // Import Background Image
 import TopBannerImgHome from "../assets/img-banner-a-accueil.png";

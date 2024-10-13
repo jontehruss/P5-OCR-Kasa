@@ -1,0 +1,17 @@
+.About {
+    padding: 20px;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+  
+    h1 {
+      text-align: center;
+      color: $primary-color;
+      margin-bottom: 30px;
+    }
+  
+    .About-wraps {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
