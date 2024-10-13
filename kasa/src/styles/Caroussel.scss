@@ -1,0 +1,59 @@
+// import des variables et mixins
+@import 'variables';
+@import 'mixins';
+
+.Caroussel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+  
+    .Caroussel-image-container {
+      width: 100%;
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+  
+    // .Caroussel-btn {
+    //   position: absolute;
+    //   top: 50%;
+    //   transform: translateY(-50%);
+    //   background-color: rgba(0, 0, 0, 0.5);
+    //   color: white;
+    //   border: none;
+    //   padding: 10px;
+    //   cursor: pointer;
+    //   z-index: 10;
+    //   border-radius: 50%;
+    //   font-size: 1.5rem;
+  
+    //   &:hover {
+    //     background-color: rgba(0, 0, 0, 0.7);
+    //   }
+  
+    //   &.left {
+    //     left: 10px;
+    //   }
+  
+    //   &.right {
+    //     right: 10px;
+    //   }
+    // }
+  
+//     .Caroussel-image-container {
+//       position: absolute;
+//       bottom: 10px;
+//       right: 10px;
+//       background-color: rgba(0, 0, 0, 0.5);
+//       color: white;
+//       padding: 5px 10px;
+//       border-radius: 5px;
+//       font-size: 0.9rem;
+//     }
+  }
+  
