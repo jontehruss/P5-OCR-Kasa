@@ -13,9 +13,8 @@ export default About;
 
 function About() {
     return (
-        <TopBannerImage />,
-
         <div className="About">
+            <TopBannerImage id={2} className="Top-pic-banner"/>
             <div className="About-wrap">
                 {/* Boucle sur les données de about.json pour le contenu des Wrap */}
                 {aboutData.map((item) =>

@@ -20,9 +20,9 @@ export default function Caroussel({ pictures }) {
         setCurrentIndex((prevIndex) => (prevIndex - 1 + pictures.length ) % pictures.length );
     };
 
-    console.log(pictures)
+    // console.log(pictures)
 
-    console.log(currentIndex)
+    // console.log(pictures.length)
 
     return (
         
@@ -30,9 +30,14 @@ export default function Caroussel({ pictures }) {
             <button className="Caroussel-btn left" onClick={prevImage}>
                 <FontAwesomeIcon icon={faChevronLeft} />
             </button>
-            <div>
+
+            <div className="Caroussel-image-container">
                 <img src={pictures[currentIndex]} alt={`Image ${currentIndex + 1}`} className="Caroussel-image-container" />
+                
             </div>
+
+            <span>{currentIndex +1} / {pictures.length}</span>
+            
             <button className="Caroussel-btn right" onClick={nextImage}>
                 <FontAwesomeIcon icon={faChevronRight} />
             </button>

@@ -1,6 +1,7 @@
-/* :root {
-  --img-path: url('../assets/img-banner-a-propos.png'),
-} */
+// import des variables et mixins
+@import 'variables';
+@import 'mixins';
+
 
 .Top-pic-banner {
   display: flex;
@@ -12,7 +13,12 @@
   opacity: 0.6;
   background-size: cover;
   background-position: center;
-  /* background-image: var(--img-path); */
-  background-image: url('../assets/img-banner-a-propos.png');
-  /* background-image: url('../assets/img-banner-a-accueil.png'); */
+}
+
+.Pic-1 {
+  background-image: $top-banner-home;
+}
+
+.Pic-2 {
+  background-image: $top-banner-about;
 }

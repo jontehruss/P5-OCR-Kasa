@@ -19,7 +19,7 @@ function Home() {
 function Main() {
     return (
         <main className="Home-main">
-            <TopBannerImage />
+            <TopBannerImage id={1} className="Top-pic-banner" text="Chez vous, partout et ailleurs" />
             <SectionCatalog />
         </main>
     );
