@@ -1,0 +1,24 @@
+// import des variables et mixins
+@import 'variables';
+@import 'mixins';
+
+.Place-host {
+    // border: solid green;
+    display:flex;
+    flex-direction: column;
+    .Host {
+        display:flex;
+
+        span {
+            color: $primary-color;
+            font-size: 1.5rem;
+            max-width: 100px;
+            text-align: right;
+        }
+    }
+}
+
+.Host-picture {
+    border-radius: 50%;
+    margin-left: 15px;
+}

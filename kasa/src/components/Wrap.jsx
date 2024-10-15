@@ -14,7 +14,7 @@ function Wrap({ title, description, equipments }) {
         setIsOpen(!isOpen);
     };
 
-    console.log(typeof equipments)
+    // console.log(typeof equipments)
 
 
 

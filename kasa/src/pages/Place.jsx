@@ -2,6 +2,7 @@
 import { useParams } from 'react-router-dom';
 import Tags from '../components/Tags';
 import Wrap from "../components/Wrap";
+import Host from '../components/Host';
 
 // Import Datas
 import logements from '../datas/logements.json';
@@ -36,11 +37,22 @@ export default function Place() {
             {/* Passer les images du logement au carrousel */}
             <Caroussel pictures={logement.pictures} />,
 
-            <h1>{logement.title}</h1>
+            <div className='Place-infos'>
+                <div>
+                    <h1>{logement.title}</h1>
+                    <span>{logement.location}</span>
+                    <Tags tags={logement.tags} />
+                </div>
+                <div >
+                    <Host name={logement.host.name} picture={logement.host.picture} rating={logement.rating} />
+                </div>
+            </div>
 
-            <span>{logement.location}</span>
 
-            <Tags tags={logement.tags} />
+
+
+
+
             <div className='Wrap-container'>
                 <Wrap key={logement.id} title="Description" description={logement.description} />
                 <Wrap key={logement.id} title="Équipements" equipments={logement.equipments} />
