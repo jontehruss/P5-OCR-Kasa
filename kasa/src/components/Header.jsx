@@ -11,7 +11,10 @@ export default Header;
 function Header() {
     return (
         <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
+            <a href="/">
+              <img src={logo} className="App-logo" alt="logo" />  
+            </a>
+            
             <Nav />
         </header>
     );

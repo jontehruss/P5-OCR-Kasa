@@ -44,13 +44,10 @@ export default function Place() {
                     <Tags tags={logement.tags} />
                 </div>
                 <div >
+                    {/* Logique à faire pour l'affichage des étoiles selon la valeur de "rating" */}
                     <Host name={logement.host.name} picture={logement.host.picture} rating={logement.rating} />
                 </div>
             </div>
-
-
-
-
 
 
             <div className='Wrap-container'>

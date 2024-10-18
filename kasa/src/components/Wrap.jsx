@@ -5,7 +5,7 @@ import { useState } from 'react';
 // Import Style 
 import "../styles/Wrap.scss";
 
-function Wrap({ title, description, equipments }) {
+function Wrap({ title, description, equipments, content }) {
     // pour connaître l'état du Wrap ouvert ou fermé
     const [isOpen, setIsOpen] = useState(false);
 
@@ -13,23 +13,40 @@ function Wrap({ title, description, equipments }) {
     const toogleAccordion = () => {
         setIsOpen(!isOpen);
     };
+    console.log(isOpen)
 
-    // console.log(typeof equipments)
-
-
-
+    // ! conflit de configuration About.jsx et Place.jsx
     return (
 
         <div className='Wrap'>
+            {/* écouter l'event onClick et appel de la fonction toogleAccordion */}
             <div className='Wrap-title' onClick={toogleAccordion}>
                 <h2>{title}</h2>
+                {/*  Condition pour modifier le chevron en fonction isOpen true/false */}
                 <FontAwesomeIcon icon={isOpen ? faChevronUp : faChevronDown} />
             </div>
-            {isOpen &&
+            {/* Condition pour afficher le contenu quand isOpen = true */}
+            {isOpen && (
                 <>
-                    <p className='Wrap-content'>{description}{equipments}</p>
+                    <div className='Wrap-content'>
+                        {/* Si la description existe, je l'affiche */}
+                        {description && <p>{description}</p>}
+
+                        {/* Vérifier s'il y a des données de type Array avant d'afficher la liste d'équipements pour empêcher l'erreur */}
+                        {Array.isArray(equipments) && equipments.length > 0 && (
+                            <ul>
+                                {/* Création de la liste avec map avec une key sur index du tableau */}
+                                {equipments.map((equipment, index) => (
+                                    <li key={index}>{equipment}</li>
+                                ))}
+                            </ul>
+                        )}
+
+                        {/* Affichage du content si présent */}
+                        {content && <p>{content}</p>}
+                    </div>
                 </>
-            }
+            )}
         </div>
     );
 };

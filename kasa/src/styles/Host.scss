@@ -4,10 +4,11 @@
 
 .Place-host {
     // border: solid green;
-    display:flex;
+    display: flex;
     flex-direction: column;
+
     .Host {
-        display:flex;
+        display: flex;
 
         span {
             color: $primary-color;
@@ -15,7 +16,16 @@
             max-width: 100px;
             text-align: right;
         }
+
     }
+
+    .Stars-container {
+        border: solid slateblue;
+        display:flex;
+        flex-direction: row;
+        color: $primary-color;
+    }
+
 }
 
 .Host-picture {

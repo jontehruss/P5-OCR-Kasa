@@ -4,9 +4,24 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 export default function Host({ name, picture, rating }) {
 
-    // console.log(name)
+    
+    console.log('hostRating = ' + rating)
+
+    // initialiser les variables
     const maxRating = 5;
-    console.log('rating = ' + rating)
+    const hostRating = rating;
+
+    let hostRatingColoredStars = [];
+
+    // Itérer selon la valeur de hostRating pour ajouter des étoiles colorées
+    for (let i=0; i<hostRating; i++) {
+        hostRatingColoredStars.push(<FontAwesomeIcon icon={faStar} key={i}/>)
+    }
+
+    
+
+    console.log(hostRatingColoredStars)
+
 
 
     return (
@@ -16,7 +31,33 @@ export default function Host({ name, picture, rating }) {
                 <img className="Host-picture" src={picture}></img>
             </div>
 
-            <FontAwesomeIcon icon={faStar} />
+            <div className="Stars-container">
+                {/* <FontAwesomeIcon icon={faStar} /> */}
+                { hostRatingColoredStars.map((star , index) => (
+                    <p>{star}</p>
+                ) ) }
+            </div>
+
+
         </div>
     )
 }
+
+
+// function colorStars() {
+
+//     // initialiser les variables
+//     const maxRating = 5;
+//     const hostRating = rating;
+
+//     let hostRatingColoredStars = [];
+
+
+//     // Itérer selon la valeur de hostRating
+//     hostRatingColoredStars.push(<FontAwesomeIcon icon={faStar} />)
+//     console.log(hostRatingColoredStars)
+
+//     return (
+//         { hostRatingColoredStars }
+//     )
+// }
