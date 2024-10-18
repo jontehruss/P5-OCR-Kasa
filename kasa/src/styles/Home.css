@@ -1,0 +1,24 @@
+.Home-main {
+  background-color: #ffffff;
+  margin: 0px 15px;
+}
+
+.Home-catalog {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  background-color: #f6f6f6;
+  color: #ffffff;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-left: 30px;
+  border-radius: 25px;
+}
+@media (max-width: 768px) {
+  .Home-catalog {
+    flex-direction: column;
+  }
+}
+
+/*# sourceMappingURL=Home.css.map */

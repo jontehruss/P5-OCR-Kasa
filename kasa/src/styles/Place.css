@@ -1,0 +1,34 @@
+.Place {
+  text-align: left;
+}
+.Place h1 {
+  color: #ff6060;
+  font-size: 2.3rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.Place span {
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+.Place .Place-infos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Wrap-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.Wrap-container .Wrap {
+  width: 47%;
+}
+.Wrap-container .Wrap .Wrap-content {
+  list-style: none;
+  font-size: 1.3em;
+  text-align: left;
+}
+
+/*# sourceMappingURL=Place.css.map */

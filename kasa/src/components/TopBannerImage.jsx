@@ -1,6 +1,6 @@
 // Import Style
-import "../styles/App.scss"; //! il faudra appeller le fichier sass 
-import "../styles/TopBannerImage.scss"
+import "../styles/App.css"; //! il faudra appeller le fichier sass 
+import "../styles/TopBannerImage.css"
 
 // Import Background Image
 import TopBannerImgHome from "../assets/img-banner-a-accueil.png";
@@ -8,6 +8,7 @@ import TopBannerImageAbout from "../assets/img-banner-a-propos.png"
 
 
 export default TopBannerImage;
+
 
 function TopBannerImage(props) {
 

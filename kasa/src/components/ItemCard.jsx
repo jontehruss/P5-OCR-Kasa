@@ -1,5 +1,5 @@
 // Import Style
-import "../styles/ItemCard.scss";
+import "../styles/ItemCard.css";
 
 // Outil de gestion/création de liens
 import { Link } from 'react-router-dom';

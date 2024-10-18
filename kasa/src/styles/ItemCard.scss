@@ -4,7 +4,7 @@
 .Item-card {
   // display: flex;
   position: relative; // Utilisé pour afficher le tire en bas à gauche de la carte
-  flex-direction:column;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   width: 30%;
@@ -14,10 +14,14 @@
   overflow: hidden;
   background-color: $primary-color;
 
+
+
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+
   }
 
   h2 {
@@ -29,11 +33,19 @@
     font-size: 1.2rem;
     color: $secondary-color;
     background-color: $background-contrast;
-    width: 100%; 
+    width: 100%;
     text-align: left;
   }
 
+  :hover {
+    // transform: scaleZ(-500);
+    // transition: transform 8.8s;
+    // transform-style: preserve-3d;
+    opacity: 0.95;
+  }
+
 }
+
 
 
 // .Item > a {

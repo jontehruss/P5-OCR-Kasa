@@ -1,0 +1,31 @@
+.Wrap {
+  border-radius: 5px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.Wrap-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #ff6060;
+  cursor: pointer;
+}
+.Wrap-title h2 {
+  font-size: 1.2rem;
+  margin: 0;
+  color: #ffffff;
+}
+.Wrap-title svg {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.Wrap-content {
+  padding: 15px;
+  color: #333333;
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=Wrap.css.map */

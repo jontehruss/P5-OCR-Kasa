@@ -3,7 +3,7 @@ import TopBannerImage from "../components/TopBannerImage";
 import ItemCard from "../components/ItemCard";
 
 // Import Style 
-import "../styles/Home.scss"
+import "../styles/Home.css"
 
 // Import Datas
 import logements from "../datas/logements.json";

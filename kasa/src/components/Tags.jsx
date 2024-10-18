@@ -1,5 +1,5 @@
 // Import styles
-import "../styles/Tags.scss"
+import "../styles/Tags.css"
 
 
 

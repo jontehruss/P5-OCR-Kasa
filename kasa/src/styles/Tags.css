@@ -1,0 +1,17 @@
+.Tags-list {
+  display: flex;
+  flex-direction: row;
+  margin-left: 0px;
+  padding-inline-start: 0px;
+}
+.Tags-list .Tag-item {
+  border-radius: 10px;
+  padding: 0px 10px;
+  margin: 10px;
+  min-width: 180px;
+  color: #ffffff;
+  background-color: #ff6060;
+  list-style: none;
+}
+
+/*# sourceMappingURL=Tags.css.map */

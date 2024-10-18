@@ -1,0 +1,26 @@
+.Place-host {
+  display: flex;
+  flex-direction: column;
+}
+.Place-host .Host {
+  display: flex;
+}
+.Place-host .Host span {
+  color: #ff6060;
+  font-size: 1.5rem;
+  max-width: 100px;
+  text-align: right;
+}
+.Place-host .Stars-container {
+  border: solid slateblue;
+  display: flex;
+  flex-direction: row;
+  color: #ff6060;
+}
+
+.Host-picture {
+  border-radius: 50%;
+  margin-left: 15px;
+}
+
+/*# sourceMappingURL=Host.css.map */

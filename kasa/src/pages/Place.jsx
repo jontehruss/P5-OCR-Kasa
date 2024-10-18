@@ -10,7 +10,7 @@ import Caroussel from '../components/Caroussel';
 
 
 // Import Style 
-import "../styles/Place.scss"
+import "../styles/Place.css"
 
 
 export default function Place() {
@@ -35,7 +35,7 @@ export default function Place() {
         <div className='Place'>
 
             {/* Passer les images du logement au carrousel */}
-            <Caroussel pictures={logement.pictures} />,
+            <Caroussel pictures={logement.pictures} key={logement.id} />,
 
             <div className='Place-infos'>
                 <div>
@@ -51,8 +51,8 @@ export default function Place() {
 
 
             <div className='Wrap-container'>
-                <Wrap key={logement.id} title="Description" description={logement.description} />
-                <Wrap key={logement.id} title="Équipements" equipments={logement.equipments} />
+                <Wrap title="Description" description={logement.description} />
+                <Wrap title="Équipements" equipments={logement.equipments} />
             </div>
 
 

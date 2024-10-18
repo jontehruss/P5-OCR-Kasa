@@ -3,7 +3,7 @@ import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { useState } from 'react';
 
 // Import Style 
-import "../styles/Wrap.scss";
+import "../styles/Wrap.css";
 
 function Wrap({ title, description, equipments, content }) {
     // pour connaître l'état du Wrap ouvert ou fermé

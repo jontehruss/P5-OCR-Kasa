@@ -1,5 +1,5 @@
 // Import Styles
-import "../styles/Caroussel.scss"
+import "../styles/Caroussel.css"
 
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
