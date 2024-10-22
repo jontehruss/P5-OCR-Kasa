@@ -3,7 +3,8 @@ import TopBannerImage from "../components/TopBannerImage";
 import ItemCard from "../components/ItemCard";
 
 // Import Style 
-import "../styles/Home.css"
+import "../styles/Home.css";
+import ImageSrc from "../assets/img-banner-a-accueil.png";
 
 // Import Datas
 import logements from "../datas/logements.json";
@@ -19,7 +20,11 @@ function Home() {
 function Main() {
     return (
         <main className="Home-main">
-            <TopBannerImage id={1} className="Top-pic-banner" text="Chez vous, partout et ailleurs" />
+            <div className="Home-top-banner">
+                <TopBannerImage className="Top-pic-banner" src={ImageSrc} alt="Illustration photo côtière" height={250} width={1240} text="Chez vous, partout et ailleurs" />
+                <h1>Chez vous, partout et ailleurs</h1>
+            </div>
+
             <SectionCatalog />
         </main>
     );
@@ -37,21 +42,3 @@ function SectionCatalog() {
         </section>
     );
 };
-
-
-//! Voir pour utiliser UseState pour la gestion des données
-//! Nécessaire pour le carousel
-// function TestDatas() {
-//     return (
-//         <ul>
-//             {testDatas.map((logement) => (
-//                 <li>
-//                     <div>
-//                         <img src={logement.cover} alt={logement.description} className="Img-item-card"></img>
-//                         <h2>{logement.title}</h2>
-//                     </div>
-//                 </li>
-//             ))}
-//         </ul>
-//     );
-// };

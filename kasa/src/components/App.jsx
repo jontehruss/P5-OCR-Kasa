@@ -17,29 +17,30 @@ import "../styles/App.css"; //! il faudra appeller le fichier sass
 import Place from "../pages/Place.jsx";
 
 function App() {
-  
+
   return (
     <div className="App">
       <Header />
-      
-      {/* Routes principales et des routes imbriquées */}
-      <Routes>
-        {/* Route pour la page d'accueil */}
-        <Route path="/" element={<Home />} />
-        
-        {/* Route pour la page À propos */}
-        <Route path="/about" element={<About />} />
-        
-        {/* Nested route pour les places */}
-        <Route path="/place">
-          <Route path=":id" element={<Place />} />
-        </Route>
 
-        <Route path="*" element={<NotFound />} />
+      <div className="App-content">
+        {/* Routes principales et des routes imbriquées */}
+        <Routes>
+          {/* Route pour la page d'accueil */}
+          <Route path="/" element={<Home />} />
+
+          {/* Route pour la page À propos */}
+          <Route path="/about" element={<About />} />
+
+          {/* Nested route pour les places */}
+          <Route path="/place">
+            <Route path=":id" element={<Place />} />
+          </Route>
+
+          <Route path="*" element={<NotFound />} />
 
 
-      </Routes>
-      
+        </Routes>
+      </div>
       <Footer />
     </div>
   );

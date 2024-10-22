@@ -12,35 +12,39 @@ export default function Caroussel({ pictures }) {
 
     // Fonction pour passer à l'image suivante
     const nextImage = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % pictures.length );
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % pictures.length);
     };
 
     // Fonction pour revenir à l'image précédente
     const prevImage = () => {
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + pictures.length ) % pictures.length );
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + pictures.length) % pictures.length);
     };
 
-    // console.log(pictures)
-
-    // console.log(pictures.length)
 
     return (
-        
+
         <div className="Caroussel">
-            <button className="Caroussel-btn left" onClick={prevImage}>
-                <FontAwesomeIcon icon={faChevronLeft} />
-            </button>
+            {/* Condition pour masquer les contrôles du Caroussel quand 1 seule  */}
+            {pictures.length === 1 ? (
+                ""
+            ) : (
+                <>
+                    <button className="Caroussel-btn left" onClick={prevImage}>
+                        <FontAwesomeIcon icon={faChevronLeft} />
+                    </button>
+
+                    <span>{currentIndex + 1} / {pictures.length}</span>
+
+                    <button className="Caroussel-btn right" onClick={nextImage}>
+                        <FontAwesomeIcon icon={faChevronRight} />
+                    </button>
+                </>
+            )};
 
             <div className="Caroussel-image-container">
                 <img src={pictures[currentIndex]} alt={`Image ${currentIndex + 1}`} className="Caroussel-image-container" />
-                
-            </div>
 
-            <span>{currentIndex +1} / {pictures.length}</span>
-            
-            <button className="Caroussel-btn right" onClick={nextImage}>
-                <FontAwesomeIcon icon={faChevronRight} />
-            </button>
+            </div>
 
         </div>
     );

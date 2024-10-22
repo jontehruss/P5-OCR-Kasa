@@ -2,7 +2,7 @@
 import { useParams } from 'react-router-dom';
 
 // Import Style 
-import "../styles/NotFound.scss";
+import "../styles/NotFound.css";
 
 // Import Image
 import NotFoundImage from "../assets/NotFound.svg";

@@ -1,10 +1,16 @@
 .App-footer {
-  color: white;
+  color: #ffffff;
   background-color: #000000;
+  width: 100vw;
+  margin-left: calc(-50vw + 49.3%);
+  padding: 20px 0;
+  text-align: center;
 }
 
 .Footer-logo {
   padding-top: 50px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=Footer.css.map */

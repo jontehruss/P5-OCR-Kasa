@@ -2,6 +2,34 @@
   background-color: #ffffff;
   margin: 0px 15px;
 }
+.Home-main .Home-top-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.Home-main .Home-top-banner h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.Home-main .Home-top-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
 .Home-catalog {
   display: flex;
@@ -12,7 +40,7 @@
   color: #ffffff;
   margin-top: 30px;
   margin-bottom: 30px;
-  padding-left: 30px;
+  padding: 45px 0px 35px 30px;
   border-radius: 25px;
 }
 @media (max-width: 768px) {

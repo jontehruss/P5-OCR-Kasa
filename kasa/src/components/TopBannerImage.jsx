@@ -7,27 +7,9 @@ import TopBannerImgHome from "../assets/img-banner-a-accueil.png";
 import TopBannerImageAbout from "../assets/img-banner-a-propos.png"
 
 
-export default TopBannerImage;
-
-
-function TopBannerImage(props) {
-
-    // const { className, id, text } = props;
-    // console.log(props.text)
-
-    // if (props.id === 1) {
-    //     console.log(props.className)
-
-    // } else
-    //     if (props.id === 2) {
-    //         console.log('about')
-    //     } else return;
+export default function TopBannerImage({ className, src, alt, width, height }) {
 
     return (
-
-
-        <div className={[props.className + " " + "Pic-" + props.id]} >
-            <h1>{props.text}</h1>
-        </div>
+        <img src={src} alt={alt} width={width} height={height} className={className} />
     )
 }

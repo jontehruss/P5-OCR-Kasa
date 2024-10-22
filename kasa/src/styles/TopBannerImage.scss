@@ -4,21 +4,12 @@
 
 
 .Top-pic-banner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 25px;
-  min-height: 25vh;
-  color: white;
-  opacity: 0.6;
-  background-size: cover;
-  background-position: center;
-}
-
-.Pic-1 {
-  background-image: $top-banner-home;
-}
-
-.Pic-2 {
-  background-image: $top-banner-about;
+    // width: 100;
+    // height: height;
+    border-radius: 25px;
+    object-fit: cover;
+    object-position: center;
+    max-width: 100%;
+    max-height: 100%;
+    // ! Opacity !
 }

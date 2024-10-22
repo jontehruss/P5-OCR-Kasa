@@ -1,9 +1,19 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
-  text-align: center;
   display: flex;
   flex-direction: column;
-  max-width: 1440px;
+  min-height: 100vh;
+  max-width: 1240px;
   margin: auto;
+}
+
+.App-content {
+  flex: 1;
 }
 
 /*# sourceMappingURL=App.css.map */

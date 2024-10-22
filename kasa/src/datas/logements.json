@@ -615,5 +615,60 @@
 			"Marais",
 			"Rivoli"
 		]
-	}
+	},
+	{
+		"id": "a1b2c3d4",
+		"title": "Charmant loft à Montmartre",
+		"cover": "https://picsum.photos/1200/1300?random=1",
+		"pictures": [
+			"https://picsum.photos/1200/1300?random=1",
+			"https://picsum.photos/1200/1300?random=2"
+		],
+		"description": "Situé au sommet de la butte Montmartre, ce loft lumineux offre une vue imprenable sur Paris. Idéal pour une escapade romantique.",
+		"host": {
+			"name": "Claire Dupont",
+			"picture": "https://picsum.photos/100/100?random=3"
+		},
+		"rating": "5",
+		"location": "Ile de France - Paris 18e",
+		"equipments": [
+			"Wi-fi",
+			"Climatisation",
+			"Machine à café",
+			"Lave-vaisselle",
+			"Douche à l'italienne"
+		],
+		"tags": [
+			"Montmartre",
+			"Vue",
+			"Romantique"
+		]
+	},
+	{
+		"id": "e5f6g7h8",
+		"title": "🎈 Une seule photo 📸",
+		"cover": "https://picsum.photos/1200/800?random=4",
+		"pictures": [
+			"https://picsum.photos/1200/800?random=4"
+		],
+		"description": "Un studio cosy et moderne dans le quartier de la Croix-Rousse, parfait pour les amateurs d’art et de gastronomie lyonnaise.",
+		"host": {
+			"name": "Jean-Pierre Martin",
+			"picture": "https://picsum.photos/100/100?random=6"
+		},
+		"rating": "4",
+		"location": "Auvergne-Rhône-Alpes - Lyon",
+		"equipments": [
+			"Wi-fi",
+			"TV",
+			"Lave-linge",
+			"Plaques de cuisson",
+			"Douche"
+		],
+		"tags": [
+			"Croix-Rousse",
+			"Art",
+			"Gastronomie"
+		]
+	}	
 ]
