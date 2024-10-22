@@ -13,9 +13,7 @@ function Wrap({ title, description, equipments, content }) {
     const toogleAccordion = () => {
         setIsOpen(!isOpen);
     };
-    // console.log(isOpen)
 
-    // ! conflit de configuration About.jsx et Place.jsx
     return (
 
         <div className='Wrap'>

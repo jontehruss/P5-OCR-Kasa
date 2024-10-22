@@ -1,0 +1,17 @@
+.Nav-items {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+.Nav-items li {
+  margin: 10px;
+}
+.Nav-items li a {
+  text-decoration: none;
+  color: #000000;
+}
+.Nav-items li .Active-link {
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=Nav.css.map */

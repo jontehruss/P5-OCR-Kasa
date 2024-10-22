@@ -8,19 +8,14 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content:  space-between;
+
+
+
   }
 
   .App-logo {
-    height: 15vmin;
+    display:flex;
+    height: 10vmin;
     pointer-events: none;
   }
   
-  .Nav-items {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-  }
-  
-  .Nav-items > li {
-    margin: 10px;
-  }

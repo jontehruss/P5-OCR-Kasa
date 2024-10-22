@@ -4,6 +4,9 @@ import "../styles/Header.css";
 // Import Assets
 import logo from "../assets/logo.svg";
 
+// Import components
+import Nav from "./Nav";
+
 // Export component
 export default Header;
 
@@ -14,19 +17,7 @@ function Header() {
             <a href="/">
               <img src={logo} className="App-logo" alt="logo" />  
             </a>
-            
             <Nav />
         </header>
-    );
-};
-
-function Nav() {
-    return (
-        <nav>
-            <ul className="Nav-items">
-                <li><a href="/">Accueil</a></li>
-                <li><a href="/about">À Propos</a></li>
-            </ul>
-        </nav>
     );
 };

@@ -11,7 +11,7 @@ function Footer() {
     return (
       <footer className="App-footer">
         <img src={logoFooter} className="Footer-logo" alt="logo" />
-        <p>© 2020 Kasa. All rights reserved</p>
+        <p><a href="/ezifhzrjighqe">© 2020 Kasa. All rights reserved</a></p>
       </footer>
     );
   };

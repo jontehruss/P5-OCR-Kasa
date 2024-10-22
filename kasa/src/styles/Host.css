@@ -4,6 +4,9 @@
 }
 .Place-host .Host {
   display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
 }
 .Place-host .Host span {
   color: #ff6060;
@@ -14,15 +17,21 @@
 .Place-host .Stars-container {
   display: flex;
   flex-direction: row;
+  justify-content: flex-end;
   color: #ff6060;
+  font-size: 1.4rem;
 }
 .Place-host .Stars-container .Grey-Stars {
   color: #e3e3e3;
 }
+.Place-host .Stars-container p {
+  margin: 0px 8px;
+}
 
 .Host-picture {
   border-radius: 50%;
-  margin-left: 15px;
+  margin-left: 10px;
+  width: 80px;
 }
 
 /*# sourceMappingURL=Host.css.map */

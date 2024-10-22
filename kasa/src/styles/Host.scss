@@ -9,6 +9,9 @@
 
     .Host {
         display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
 
         span {
             color: $primary-color;
@@ -23,10 +26,17 @@
         // border: solid slateblue;
         display:flex;
         flex-direction: row;
+        justify-content: flex-end;        
         color: $primary-color;
+        font-size: 1.4rem;
+
 
         .Grey-Stars {
             color: $item-light-color;
+        }
+
+        p { 
+            margin : 0px 8px;
         }
     }
 
@@ -34,5 +44,6 @@
 
 .Host-picture {
     border-radius: 50%;
-    margin-left: 15px;
+    margin-left: 10px;
+    width: 80px
 }

@@ -1,5 +1,5 @@
 // Import components
-import { useParams, Routes, Route } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import Tags from '../components/Tags';
 import Wrap from "../components/Wrap";
 import Host from '../components/Host';
@@ -36,7 +36,7 @@ export default function Place() {
         <div className='Place'>
 
             {/* Passer les images du logement au carrousel */}
-            <Caroussel pictures={logement.pictures} key={logement.id} />,
+            <Caroussel pictures={logement.pictures} key={logement.id} />
 
             <div className='Place-infos'>
                 <div>

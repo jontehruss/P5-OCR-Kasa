@@ -11,18 +11,9 @@
 }
 
 .App-logo {
-  height: 15vmin;
-  pointer-events: none;
-}
-
-.Nav-items {
   display: flex;
-  flex-direction: row;
-  list-style-type: none;
-}
-
-.Nav-items > li {
-  margin: 10px;
+  height: 10vmin;
+  pointer-events: none;
 }
 
 /*# sourceMappingURL=Header.css.map */

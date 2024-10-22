@@ -15,6 +15,7 @@
     align-items: center;
     padding: 15px;
     background-color: $primary-color;
+    border-radius: 5px;
     cursor: pointer;
   
     h2 {
@@ -31,7 +32,6 @@
 
 .Wrap-content {
     padding: 15px;
-    // background-color: #f9f9f9;
     color: $text-color;
     font-size: 1rem;
 }

@@ -3,77 +3,65 @@
 @import 'mixins';
 
 .Caroussel {
-    position: relative;
+  position: relative;
+  width: 100%;
+  height: 415px;
+  margin: 0px 0px 25px 0px;
+  overflow: hidden;
+  border-radius: 10px;
+
+  .Caroussel-image-container {
+    display: flex;
+    border-radius: 5px;
+    font-size: 0.9rem;
     width: 100%;
-    // max-width: 600px;
-    height: 415px;
-    margin: 20px auto;
-    overflow: hidden;
-    border-radius: 10px;
-  
-    .Caroussel-image-container {
-      display: flex; 
 
-      // position: absolute;
-      // bottom: 10px;
-      // right: 10px;
-      // background-color: rgba(0, 0, 0, 0.5);
-      // color: white;
-      // padding: 5px 10px;
-      border-radius: 5px;
-      font-size: 0.9rem;
-    }
-
-    .Caroussel-image-container {
+    img {
       width: 100%;
-      
-      img {
-        width: 100%;
-        height: 600px;
-        object-fit: cover;
-        object-position: bottom;
-        // border: solid 5px red;
-      }
-
-    }
-  
-    .Caroussel-btn {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: $background-transparent;
-      color: $secondary-color;
-      border: none;
-      // padding: 10px;
-      cursor: pointer;
-      // z-index: 10;
-      border-radius: 50%;
-      width: 74px;
-      height:74px;
-      font-size: 3rem;
-  
-      &:hover {
-        background-color: $background-contrast;
-      }
-  
-      &.left {
-        left: 10px;
-      }
-  
-      &.right {
-        right: 10px;
-      }
-    }
-
-    span {
-      position: absolute; /* pour positionner le span */
-      bottom: 10px; /* en bas */
-      left: 50%;
-      transform: translateX(-50%); /* Centrage horizontal */
-      font-size: 2rem;
-      color: $secondary-color;
-      padding: 5px 10px;
-      z-index: 5; /* au-dessus des autres éléments */
+      height: 600px;
+      object-fit: cover;
+      object-position: bottom;
     }
 
   }
+
+
+  .Caroussel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $background-transparent;
+    color: $secondary-color;
+    border: none;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    font-size: 4rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $background-contrast;
+    }
+
+    &.left {
+      left: 10px;
+    }
+
+    &.right {
+      right: 10px;
+    }
+  }
+
+  span {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    letter-spacing: -3px;
+    color: $secondary-color;
+    padding: 5px 10px;
+    z-index: 1;
+  }
+
+}

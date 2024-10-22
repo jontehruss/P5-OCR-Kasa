@@ -7,7 +7,7 @@ import aboutData from "../datas/about.json"
 
 
 // Import Style 
-// ! utiliser cet import image et gérer le className ici et différent sur la page Home
+import "../styles/About.scss"
 import TopBannerImg from "../assets/img-banner-a-accueil.png";
 import ImageSrc from "../assets/img-banner-a-propos.png";
 
@@ -18,7 +18,11 @@ function About() {
     return (
         <div className="About">
 
-            <TopBannerImage className="Top-pic-banner" src={ImageSrc} alt="Illustration photo côtière" height={250} width={1240} text="Chez vous, partout et ailleurs" />
+            <div className="About-top-banner">
+                <TopBannerImage className="Top-pic-banner" src={ImageSrc} alt="Illustration photo montagne" height={250} width={1240} text="Chez vous, partout et ailleurs" />
+            </div>
+
+
             <div className="About-wrap">
                 {/* Boucle sur les données de about.json pour le contenu des Wrap */}
                 {aboutData.map((item, index) =>

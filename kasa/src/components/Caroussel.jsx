@@ -39,10 +39,10 @@ export default function Caroussel({ pictures }) {
                         <FontAwesomeIcon icon={faChevronRight} />
                     </button>
                 </>
-            )};
+            )}
 
             <div className="Caroussel-image-container">
-                <img src={pictures[currentIndex]} alt={`Image ${currentIndex + 1}`} className="Caroussel-image-container" />
+                <img src={pictures[currentIndex]} alt={`Vue intérieure du logement ${currentIndex + 1}`} className="Caroussel-image-container" />
 
             </div>
 

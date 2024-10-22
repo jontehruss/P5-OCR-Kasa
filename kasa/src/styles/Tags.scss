@@ -9,12 +9,16 @@
 
     .Tag-item {
         border-radius: 10px;
-        padding: 0px 10px;
-        margin: 10px;
-        min-width: 180px;
+        padding: 3px 10px;
+        margin: 10px 10px 10px 0px;
+        min-width: 115px;
+        max-width:fit-content;
         color: $secondary-color;
         background-color: $primary-color;
         list-style: none;
+        font-weight: 500;
+        font-size: 1rem;
+        text-align: center;
 
     }
 
