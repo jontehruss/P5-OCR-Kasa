@@ -1,8 +1,9 @@
 // Import components
-import { useParams } from 'react-router-dom';
+import { useParams, Routes, Route } from 'react-router-dom';
 import Tags from '../components/Tags';
 import Wrap from "../components/Wrap";
 import Host from '../components/Host';
+import NotFound from '../components/NotFound';
 
 // Import Datas
 import logements from '../datas/logements.json';
@@ -13,6 +14,7 @@ import Caroussel from '../components/Caroussel';
 import "../styles/Place.css"
 
 
+
 export default function Place() {
     // Récupèrer l'ID du logement à partir de l'URL
     const { id } = useParams();
@@ -20,12 +22,11 @@ export default function Place() {
     // Recherche du logement correspondant
     const logement = logements.find(l => l.id === id);
 
-    // console.log(logement.pictures)
-    // console.log(logement)
-
     if (!logement) {
-        // ! Ici renvoyer vers 404
-        return <h2>Logement non trouvé</h2>;
+        return (
+            <NotFound />
+        )
+
     };
 
 

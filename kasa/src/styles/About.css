@@ -1,17 +1,18 @@
-/* Error: Undefined variable.
- *   ,
- * 9 |       color: $primary-color;
- *   |              ^^^^^^^^^^^^^^
- *   '
- *   src\styles\About.scss 9:14  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined variable.\a   \2577 \a 9 \2502        color: $primary-color;\d\a   \2502               ^^^^^^^^^^^^^^\a   \2575 \a   src\\styles\\About.scss 9:14  root stylesheet";
+.About {
+  padding: 20px;
+  background-color: #f6f6f6;
+  border-radius: 10px;
 }
+.About h1 {
+  text-align: center;
+  color: #ff6060;
+  margin-bottom: 30px;
+}
+.About .About-wrap {
+  display: flex;
+  flex-direction: column;
+  margin: 45px 20px;
+  gap: 20px;
+}
+
+/*# sourceMappingURL=About.css.map */

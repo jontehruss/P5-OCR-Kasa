@@ -20,10 +20,14 @@
     }
 
     .Stars-container {
-        border: solid slateblue;
+        // border: solid slateblue;
         display:flex;
         flex-direction: row;
         color: $primary-color;
+
+        .Grey-Stars {
+            color: $item-light-color;
+        }
     }
 
 }

@@ -5,6 +5,7 @@ import { Routes, Route } from 'react-router-dom';
 // Import components
 import Header from "./Header.jsx";
 import Footer from "./Footer.jsx";
+import NotFound from "./NotFound.jsx";
 
 // Import Pages
 import Home from "../pages/Home.jsx"
@@ -16,6 +17,7 @@ import "../styles/App.css"; //! il faudra appeller le fichier sass
 import Place from "../pages/Place.jsx";
 
 function App() {
+  
   return (
     <div className="App">
       <Header />
@@ -32,6 +34,10 @@ function App() {
         <Route path="/place">
           <Route path=":id" element={<Place />} />
         </Route>
+
+        <Route path="*" element={<NotFound />} />
+
+
       </Routes>
       
       <Footer />

@@ -1,0 +1,25 @@
+.NotFound-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.NotFound-container img {
+  width: 40%;
+  margin: 50px 0px;
+}
+.NotFound-container span {
+  margin: 0px 0px 50px 0px;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #ff6060;
+}
+.NotFound-container a {
+  margin: 0px 0px 50px 0px;
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: #000000;
+}
+
+/*# sourceMappingURL=NotFound.css.map */

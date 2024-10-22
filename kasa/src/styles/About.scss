@@ -1,8 +1,12 @@
+// import des variables et mixins
+@import 'variables';
+@import 'mixins';
+
 .About {
     padding: 20px;
-    background-color: #f6f6f6;
+    background-color: $third-color;
     border-radius: 10px;
-
+  // border-color: none;
   
     h1 {
       text-align: center;

@@ -12,10 +12,12 @@
   text-align: right;
 }
 .Place-host .Stars-container {
-  border: solid slateblue;
   display: flex;
   flex-direction: row;
   color: #ff6060;
+}
+.Place-host .Stars-container .Grey-Stars {
+  color: #e3e3e3;
 }
 
 .Host-picture {

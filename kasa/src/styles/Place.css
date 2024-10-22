@@ -30,5 +30,8 @@
   font-size: 1.3em;
   text-align: left;
 }
+.Wrap-container .Wrap .Wrap-content ul {
+  list-style: none;
+}
 
 /*# sourceMappingURL=Place.css.map */
