@@ -5,11 +5,17 @@
 .Wrap {
     // border: 1px solid #ccc;
     border-radius: 5px;
-    margin-bottom: 15px;
+    // margin-bottom: 15px;
     overflow: hidden;
 }
 
 .Wrap-title {
+
+  @include mobile {
+    border-radius: 10px;
+    padding: 8px 15px;
+  }
+
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,6 +37,7 @@
   }
 
 .Wrap-content {
+
     padding: 15px;
     color: $text-color;
     font-size: 1rem;

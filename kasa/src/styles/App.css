@@ -3,6 +3,11 @@ html, body {
   margin: 0;
   padding: 0;
 }
+@media (max-width: 600px) {
+  html, body {
+    background-color: #f6f6f6;
+  }
+}
 
 .App {
   display: flex;

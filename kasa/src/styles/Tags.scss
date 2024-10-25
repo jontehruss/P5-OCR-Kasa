@@ -1,7 +1,11 @@
 // import des variables et mixins
 @import 'variables';
+@import 'mixins';
 
 .Tags-list {
+    @include mobile {
+        flex-wrap: wrap;
+    }
     display: flex;
     flex-direction: row;
     margin-left: 0px;

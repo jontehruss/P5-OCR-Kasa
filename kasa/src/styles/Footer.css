@@ -6,11 +6,21 @@
   padding: 20px 0;
   text-align: center;
 }
-
-.Footer-logo {
+@media (max-width: 600px) {
+  .App-footer {
+    margin-left: calc(-50vw + 50%);
+    height: 210px;
+  }
+}
+.App-footer .Footer-logo {
   padding-top: 50px;
   max-width: 1440px;
   margin: 0 auto;
+}
+@media (max-width: 600px) {
+  .App-footer .Footer-logo {
+    height: 12vmin;
+  }
 }
 
 /*# sourceMappingURL=Footer.css.map */

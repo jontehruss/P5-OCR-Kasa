@@ -4,12 +4,16 @@
 
 
 .Top-pic-banner {
-    // width: 100;
-    // height: height;
+
+    @include mobile {
+        height: 111px;
+        border-radius: 15px
+    }
+
     border-radius: 25px;
     object-fit: cover;
     object-position: center;
     max-width: 100%;
-    max-height: 100%;
-    // ! Opacity !
+    // max-height: 100%;
+
 }

@@ -20,20 +20,32 @@
   border-radius: 25px;
   background-color: rgba(0, 0, 0, 0.3);
 }
-.About h1 {
-  text-align: center;
-  color: #ff6060;
-  margin-bottom: 30px;
+@media (max-width: 600px) {
+  .About .About-top-banner::before {
+    border-radius: 15px;
+  }
 }
 .About .About-wrap {
   display: flex;
   flex-direction: column;
   padding: 0 55px;
   margin: 45px 0px;
-  gap: 15px;
+  gap: 35px;
+}
+@media (max-width: 600px) {
+  .About .About-wrap {
+    padding: 0 0px;
+    margin: 30px 0px;
+    gap: 30px;
+  }
 }
 .About .About-wrap h2 {
   font-size: 1.7rem;
+}
+@media (max-width: 600px) {
+  .About .About-wrap h2 {
+    font-size: 1.4rem;
+  }
 }
 .About .About-wrap .Wrap-content {
   color: #000000;
@@ -41,6 +53,11 @@
 }
 .About .About-wrap .Wrap-content p {
   margin: 0;
+}
+@media (max-width: 600px) {
+  .About .About-wrap .Wrap-content p {
+    font-size: 1.1rem;
+  }
 }
 
 /*# sourceMappingURL=About.css.map */

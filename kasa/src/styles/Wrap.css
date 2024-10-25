@@ -1,6 +1,5 @@
 .Wrap {
   border-radius: 5px;
-  margin-bottom: 15px;
   overflow: hidden;
 }
 
@@ -12,6 +11,12 @@
   background-color: #ff6060;
   border-radius: 5px;
   cursor: pointer;
+}
+@media (max-width: 600px) {
+  .Wrap-title {
+    border-radius: 10px;
+    padding: 8px 15px;
+  }
 }
 .Wrap-title h2 {
   font-size: 1.2rem;

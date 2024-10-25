@@ -1,7 +1,21 @@
+// import des variables et mixins
+@import 'variables';
+@import 'mixins';
+
+
 .App-header {
+
+    @include mobile {
+      padding: 15px 15px;
+      background-color: $third-color;
+      align-items: center;
+      font-size: calc(10px + 1.7vmin);
+      text-transform: uppercase;
+    }
+
     padding: 50px 15px;
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
+    background-color: $secondary-color;
+    color: $fourth-color;
     font-size: calc(10px + 2vmin);
     min-height: 10vh;
     display: flex;
@@ -14,8 +28,13 @@
   }
 
   .App-logo {
+
+    @include mobile {
+      height: 12vmin;
+    }
+
     display:flex;
     height: 10vmin;
-    pointer-events: none;
+    // pointer-events: none;
   }
   
