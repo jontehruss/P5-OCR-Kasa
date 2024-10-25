@@ -5,7 +5,12 @@
 .Place-host {
     @include mobile {
         flex-direction: row-reverse;
-        align-items:center;
+        justify-content: space-between;
+        align-items: center;
+        // width: 100%; // Prend toute la largeur de l'écran
+        flex: 1;
+        padding: 10px; // Espacement autour des éléments
+        box-sizing: border-box;
     }
 
     display: flex;
@@ -13,12 +18,13 @@
 
     .Host {
         @include mobile {
-            margin-bottom: 0px;
+            flex: 1;
+            margin-left: auto; // pour que le div reste à droite            
+            margin-bottom: 0;
         }
-        
+
         display: flex;
         justify-content: flex-end;
-        flex-wrap: wrap;
         margin-bottom: 30px;
 
         span {
@@ -27,12 +33,15 @@
             max-width: 100px;
             text-align: right;
         }
-
-
     }
 
     .Stars-container {
-        // border: solid slateblue;
+        @include mobile {
+            font-size: 1.1rem;
+            flex: 1;
+            justify-content: flex-start;
+        }
+
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
@@ -45,6 +54,9 @@
         }
 
         p {
+            @include mobile {
+                margin: 0px 4px;
+            }
             margin: 0px 8px;
         }
     }
@@ -52,6 +64,10 @@
 }
 
 .Host-picture {
+    @include mobile {
+        width: 60px;
+        height: 60px;
+    }
     border-radius: 50%;
     margin-left: 10px;
     width: 80px

@@ -8,8 +8,8 @@ import aboutData from "../datas/about.json"
 
 // Import Style 
 import "../styles/About.scss"
-import TopBannerImg from "../assets/img-banner-a-accueil.png";
-import ImageSrc from "../assets/img-banner-a-propos.png";
+// import TopBannerImg from "../image/img-banner-a-accueil.png";
+import ImageSrc from "../images/img-banner-a-propos.png";
 
 export default About;
 

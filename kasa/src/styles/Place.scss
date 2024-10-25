@@ -38,30 +38,56 @@
     .Place-infos {
         @include mobile {
             flex-wrap: wrap;
+
+
         }
 
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         margin-bottom: 25px;
+
+        .Host-info-container {
+            @include mobile {
+                display: flex;
+                flex: 1;
+            }
+        }
     }
 }
 
 .Wrap-container {
+    @include mobile {
+        flex-direction: column;
+    }
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
     .Wrap {
+        @include mobile {
+            width: 100%;
+            // margin: 0px;
+        }
+
         width: 47%;
-        margin-bottom: 35px;
+        margin: 0px 0px 35px 0px;
 
         .Wrap-content {
+            @include mobile {
+                font-size: 1.1rem;
+                padding: 0 15px;
+
+            }
             list-style: none;
             font-size: 1.3em;
             text-align: left;
 
             ul {
+                @include mobile {
+                    line-height: 1.6rem;
+                }
                 list-style: none;
                 padding-inline-start: 10px;
                 line-height: 1.8rem;

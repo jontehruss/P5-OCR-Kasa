@@ -5,18 +5,23 @@
 @media (max-width: 600px) {
   .Place-host {
     flex-direction: row-reverse;
+    justify-content: space-between;
     align-items: center;
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
   }
 }
 .Place-host .Host {
   display: flex;
   justify-content: flex-end;
-  flex-wrap: wrap;
   margin-bottom: 30px;
 }
 @media (max-width: 600px) {
   .Place-host .Host {
-    margin-bottom: 0px;
+    flex: 1;
+    margin-left: auto;
+    margin-bottom: 0;
   }
 }
 .Place-host .Host span {
@@ -32,17 +37,35 @@
   color: #ff6060;
   font-size: 1.4rem;
 }
+@media (max-width: 600px) {
+  .Place-host .Stars-container {
+    font-size: 1.1rem;
+    flex: 1;
+    justify-content: flex-start;
+  }
+}
 .Place-host .Stars-container .Grey-Stars {
   color: #e3e3e3;
 }
 .Place-host .Stars-container p {
   margin: 0px 8px;
 }
+@media (max-width: 600px) {
+  .Place-host .Stars-container p {
+    margin: 0px 4px;
+  }
+}
 
 .Host-picture {
   border-radius: 50%;
   margin-left: 10px;
   width: 80px;
+}
+@media (max-width: 600px) {
+  .Host-picture {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 /*# sourceMappingURL=Host.css.map */
