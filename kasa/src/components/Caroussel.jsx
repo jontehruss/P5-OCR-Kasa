@@ -61,12 +61,16 @@ export default function Caroussel({ pictures }) {
             )}
 
             <div className="Caroussel-image-container">
-                <img
-                    src={pictures[currentIndex]}
-                    alt={`Vue intérieure du logement ${currentIndex + 1}`}
-                    // className="Caroussel-image-container"
-                    className={`Caroussel-image ${isTransitioning ? 'fade' : ''}`} // Classe fade pour l'animation
-                />
+                <div className="Caroussel-image-container">
+                    {pictures.map((picture, index) => (
+                        <img
+                            key={index}
+                            src={picture}
+                            alt={`Vue intérieure du logement ${index + 1}`}
+                            className={`Caroussel-image ${index === currentIndex ? 'visible' : 'hidden'} ${isTransitioning ? 'transitioning' : ''}`}
+                        />
+                    ))}
+                </div>
 
             </div>
 

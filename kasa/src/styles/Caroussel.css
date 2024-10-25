@@ -7,21 +7,31 @@
   border-radius: 10px;
 }
 .Caroussel .Caroussel-image-container {
-  display: flex;
-  border-radius: 5px;
-  font-size: 0.9rem;
+  position: relative;
   width: 100%;
+  height: 100%;
 }
-.Caroussel .Caroussel-image-container img {
+.Caroussel .Caroussel-image {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 600px;
+  height: 100%;
   object-fit: cover;
-  object-position: bottom;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-.Caroussel .Caroussel-image-container .fade {
   opacity: 0;
-  transform: tanslateX(50%);
+  transition: opacity 0.7s ease;
+}
+.Caroussel .Caroussel-image.visible {
+  opacity: 1;
+  z-index: 1;
+}
+.Caroussel .Caroussel-image.hidden {
+  opacity: 0;
+  z-index: 0;
+}
+.Caroussel .Caroussel-image.transitioning {
+  transition: opacity 0.7s ease, transform 0.7s ease;
+  transform: scale(1.02);
 }
 .Caroussel .Caroussel-btn {
   position: absolute;
@@ -35,6 +45,7 @@
   height: 90px;
   font-size: 4rem;
   cursor: pointer;
+  z-index: 2;
 }
 .Caroussel .Caroussel-btn:hover {
   background-color: rgba(0, 0, 0, 0.5);
@@ -54,7 +65,7 @@
   letter-spacing: -3px;
   color: #ffffff;
   padding: 5px 10px;
-  z-index: 1;
+  z-index: 2;
 }
 
 /*# sourceMappingURL=Caroussel.css.map */
