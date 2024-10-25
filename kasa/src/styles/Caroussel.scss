@@ -21,6 +21,13 @@
       height: 600px;
       object-fit: cover;
       object-position: bottom;
+      transition: opacity 0.3s ease, transform 0.3s ease; // Animation opacité et transformation
+    }
+
+    .fade {
+      // border: solid red;
+      opacity: 0; // masquer pendat la transition
+      transform: tanslateX(50%); //déplacement à droite
     }
 
   }

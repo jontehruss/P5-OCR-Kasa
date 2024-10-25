@@ -17,6 +17,11 @@
   height: 600px;
   object-fit: cover;
   object-position: bottom;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.Caroussel .Caroussel-image-container .fade {
+  opacity: 0;
+  transform: tanslateX(50%);
 }
 .Caroussel .Caroussel-btn {
   position: absolute;

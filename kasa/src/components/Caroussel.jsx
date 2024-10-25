@@ -10,21 +10,40 @@ export default function Caroussel({ pictures }) {
     // pour connaître l'état du Caroussel (index de l'image affichée) 
     const [currentIndex, setCurrentIndex] = useState(0);
 
+    // Gérer l'état des transitions
+    const [isTransitioning, setIsTransitioning] = useState(false);
+
     // Fonction pour passer à l'image suivante
     const nextImage = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % pictures.length);
+        if (!isTransitioning) {
+
+            setIsTransitioning(true);
+            setTimeout(() => {
+                setCurrentIndex((prevIndex) => (prevIndex + 1) % pictures.length);
+                setIsTransitioning(false);
+            }, 300);
+
+        } console.log(isTransitioning)
+
     };
 
     // Fonction pour revenir à l'image précédente
     const prevImage = () => {
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + pictures.length) % pictures.length);
+        if (!isTransitioning) {
+            setIsTransitioning(true);
+            setTimeout(() => {
+                setCurrentIndex((prevIndex) => (prevIndex - 1 + pictures.length) % pictures.length);
+                setIsTransitioning(false);
+            }, 300);
+
+        }
     };
 
 
     return (
 
         <div className="Caroussel">
-            {/* Condition pour masquer les contrôles du Caroussel quand 1 seule  */}
+            {/* Condition pour masquer les contrôles du Caroussel quand 1 seule image */}
             {pictures.length === 1 ? (
                 ""
             ) : (
@@ -42,7 +61,12 @@ export default function Caroussel({ pictures }) {
             )}
 
             <div className="Caroussel-image-container">
-                <img src={pictures[currentIndex]} alt={`Vue intérieure du logement ${currentIndex + 1}`} className="Caroussel-image-container" />
+                <img
+                    src={pictures[currentIndex]}
+                    alt={`Vue intérieure du logement ${currentIndex + 1}`}
+                    // className="Caroussel-image-container"
+                    className={`Caroussel-image ${isTransitioning ? 'fade' : ''}`} // Classe fade pour l'animation
+                />
 
             </div>
 
