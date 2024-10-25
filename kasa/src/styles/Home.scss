@@ -3,6 +3,9 @@
 @import 'mixins';
 
 .Home-main {
+  @include mobile {
+    background-color: $third-color;
+  }
   background-color: $secondary-color;
   margin: 0px 15px;
 

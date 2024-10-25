@@ -3,10 +3,10 @@
 @import 'mixins';
 
 .Wrap {
-    // border: 1px solid #ccc;
-    border-radius: 5px;
-    // margin-bottom: 15px;
-    overflow: hidden;
+  // border: 1px solid #ccc;
+  border-radius: 5px;
+  // margin-bottom: 15px;
+  overflow: hidden;
 }
 
 .Wrap-title {
@@ -16,32 +16,51 @@
     padding: 8px 15px;
   }
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    background-color: $primary-color;
-    border-radius: 5px;
-    cursor: pointer;
-  
-    h2 {
-      @include mobile {
-        font-size: 1.1rem;
-      }
-      font-size: 1.2rem;
-      margin: 0;
-      color: $secondary-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: $primary-color;
+  border-radius: 5px;
+  cursor: pointer;
+
+  h2 {
+    @include mobile {
+      font-size: 1.1rem;
     }
-  
-    svg {
-      font-size: 1.5rem;
-      color: $secondary-color;
-    }
+
+    font-size: 1.2rem;
+    margin: 0;
+    color: $secondary-color;
   }
 
-.Wrap-content {
+  .chevron {
+    font-size: 1.5rem;
+    color: $secondary-color;
+    transition: transform 0.7s ease;
+    /* transition sur la rotation */
+    transform-origin: center;
+    /* point de rotation au centre */
 
-    padding: 15px;
-    color: $text-color;
-    font-size: 1rem;
+  }
+
+  .chevron.open {
+    transform: rotate(180deg);
+  }
+
 }
+
+
+.Wrap-content {
+  padding: 0 15px; 
+  color: $text-color;
+  font-size: 1rem;
+  max-height: 0; // masquer à l'initialisation
+  overflow: hidden; // cacher les débord
+  transition: max-height 0.7s ease; // Transition
+}
+
+.Wrap-content.open {
+
+}
+

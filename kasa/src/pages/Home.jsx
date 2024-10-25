@@ -4,7 +4,7 @@ import ItemCard from "../components/ItemCard";
 
 // Import Style 
 import "../styles/Home.css";
-import ImageSrc from "../images/img-banner-a-accueil.png";
+import ImageSrc from "../images/img-banner-a-accueil.webp";
 
 // Import Datas
 import logements from "../datas/logements.json";

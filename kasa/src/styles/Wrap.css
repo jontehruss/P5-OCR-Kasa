@@ -28,15 +28,25 @@
     font-size: 1.1rem;
   }
 }
-.Wrap-title svg {
+.Wrap-title .chevron {
   font-size: 1.5rem;
   color: #ffffff;
+  transition: transform 0.7s ease;
+  /* transition sur la rotation */
+  transform-origin: center;
+  /* point de rotation au centre */
+}
+.Wrap-title .chevron.open {
+  transform: rotate(180deg);
 }
 
 .Wrap-content {
-  padding: 15px;
+  padding: 0 15px;
   color: #333333;
   font-size: 1rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.7s ease;
 }
 
 /*# sourceMappingURL=Wrap.css.map */
