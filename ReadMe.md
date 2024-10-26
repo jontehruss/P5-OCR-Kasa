@@ -18,8 +18,12 @@ npm install -g sass
 │   └─── Composants fonctionnels
 ├───datas
 │   └─── Fichier de données au format JSON pour simuler une API
+├───images
+│   └─── Dossier des images
 ├───pages
 │   └─── Composants pages
+├───routes
+│   └─── Centralisation du routage client/side
 └───styles
    └─── Fichiers de style par composant
 ```

@@ -9,11 +9,8 @@ import NotFound from '../components/NotFound';
 import logements from '../datas/logements.json';
 import Caroussel from '../components/Caroussel';
 
-
 // Import Style 
 import "../styles/Place.css"
-
-
 
 export default function Place() {
     // Récupèrer l'ID du logement à partir de l'URL
@@ -28,8 +25,6 @@ export default function Place() {
         )
 
     };
-
-
 
     return (
 
@@ -50,17 +45,11 @@ export default function Place() {
                 </div>
             </div>
 
-
             <div className='Wrap-container'>
                 <Wrap title="Description" description={logement.description} />
                 <Wrap title="Équipements" equipments={logement.equipments} />
             </div>
-
-
-
+            
         </div>
-
-
-
     );
 };

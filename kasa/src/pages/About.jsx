@@ -11,9 +11,7 @@ import "../styles/About.scss"
 // import TopBannerImg from "../image/img-banner-a-accueil.png";
 import ImageSrc from "../images/img-banner-a-propos.webp";
 
-export default About;
-
-function About() {
+export default function About() {
 
     return (
         <div className="About">

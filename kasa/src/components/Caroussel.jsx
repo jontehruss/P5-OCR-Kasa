@@ -1,10 +1,9 @@
-// Import Styles
-import "../styles/Caroussel.css"
-
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
+// Import Styles
+import "../styles/Caroussel.css"
 import Image from "./Image";
 
 export default function Caroussel({ pictures }) {
@@ -19,12 +18,13 @@ export default function Caroussel({ pictures }) {
         if (!isTransitioning) {
 
             setIsTransitioning(true);
+            // Timeout utilisé pour la durée de vrai sur IsTransitionning -> gestion de l'animation
             setTimeout(() => {
                 setCurrentIndex((prevIndex) => (prevIndex + 1) % pictures.length);
                 setIsTransitioning(false);
             }, 300);
 
-        } console.log(isTransitioning)
+        }
 
     };
 
@@ -45,7 +45,7 @@ export default function Caroussel({ pictures }) {
 
         <div className="Caroussel">
             {/* Condition pour masquer les contrôles du Caroussel quand 1 seule image */}
-            {pictures.length === 1 ? (
+            {pictures.length <= 1 ? (
                 ""
             ) : (
                 <>
@@ -64,17 +64,15 @@ export default function Caroussel({ pictures }) {
             <div className="Caroussel-image-container">
                 <div className="Caroussel-image-container">
                     {pictures.map((picture, index) => (
-
                         <Image
                         key={index}
                             src={picture}
                             alt={`Vue intérieure du logement ${index + 1}`}
+                            // Opérateurs conditionnels pour appliquer des classes (? pour visible ou hidden et transitionning)
                             className={`Caroussel-image ${index === currentIndex ? 'visible' : 'hidden'} ${isTransitioning ? 'transitioning' : ''}`}
                         />
-                        
                     ))}
                 </div>
-
             </div>
 
         </div>

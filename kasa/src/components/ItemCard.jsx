@@ -9,18 +9,18 @@ import { Link } from 'react-router-dom';
 
 // Export component
 // Recevoir un seul logement en prop
-export default function ItemCard({ logement }) { 
+export default function ItemCard({ logement }) {
   // console.log(logement)
   return (
     <div className="Item-card">
       {/* Utilisation de Link pour générer un lien dynamique vers le logement */}
       <Link to={`/place/${logement.id}`}>
         <h2>{logement.title}</h2>
-        <Image 
-          src={logement.cover} 
+        <Image
+          src={logement.cover}
           alt={logement.title}
         />
       </Link>
     </div>
   );
- };
+};

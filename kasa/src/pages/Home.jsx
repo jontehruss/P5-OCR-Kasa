@@ -13,24 +13,20 @@ export default Home;
 
 function Home() {
     return (
-        <Main />
-    )
-};
-
-function Main() {
-    return (
         <main className="Home-main">
+
             <div className="Home-top-banner">
-                <Image 
-                    className="Top-pic-banner" 
-                    src={ImageSrc} alt="Illustration photo côtière" 
-                    height={250} 
-                    width={1240} text="Chez vous, partout et ailleurs" 
+                <Image
+                    className="Top-pic-banner"
+                    src={ImageSrc} alt="Illustration photo côtière"
+                    height={250}
+                    width={1240} text="Chez vous, partout et ailleurs"
                 />
                 <h1>Chez vous, partout et ailleurs</h1>
             </div>
 
             <Catalog />
+            
         </main>
-    );
+    )
 };

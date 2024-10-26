@@ -9,17 +9,17 @@ export default function Host({ name, picture, rating }) {
     const maxRating = 5;
     const hostRating = rating;
 
+    // initialiser un tableau pour les étoiles
     let hostRatingColoredStars = [];
 
     // Itérer selon la valeur de hostRating pour ajouter des étoiles colorées
-    for (let i = 0; i < hostRating; i++) {
+    for (let i = 0; i < hostRating; i++) { 
         hostRatingColoredStars.push(<FontAwesomeIcon icon={faStar} key={i} />)
     };
 
     // Itérer à nouveau pour ajouter les étoiles grises
     for (let i = hostRating; i < maxRating; i++) {
         hostRatingColoredStars.push(<FontAwesomeIcon icon={faStar} key={i} color="#e3e3e3" />)
-        // $item-light-color : #e3e3e3;
     };
 
     return (
@@ -30,12 +30,11 @@ export default function Host({ name, picture, rating }) {
             </div>
 
             <div className="Stars-container">
-                {/* <FontAwesomeIcon icon={faStar} /> */}
+                {/* Restitution du tableau de stars */}
                 {hostRatingColoredStars.map((star, index) => (
                     <p key={index} >{star}</p>
                 ))}
             </div>
-
         </div>
-    )
-}
+    );
+};

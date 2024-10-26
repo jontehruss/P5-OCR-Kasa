@@ -13,10 +13,11 @@ export default function Header() {
     return (
         <header className="App-header">
             <a href="/">
-                <Image 
-                    src={logo} 
-                    alt="kasa-app-logo" 
-                    className="App-logo" />
+                <Image
+                    src={logo}
+                    alt="kasa-app-logo"
+                    className="App-logo"
+                />
             </a>
             <Nav />
         </header>
