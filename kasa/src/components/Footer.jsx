@@ -4,14 +4,25 @@ import "../styles/Footer.css"
 // Import Assets
 import logoFooter from "../assets/logo-footer.svg";
 
-// Export component
-export default Footer;
+// Import Component
+import Image from "./Image";
 
-function Footer() {
+// Export component
+export default function Footer() {
     return (
       <footer className="App-footer">
-        <img src={logoFooter} className="Footer-logo" alt="logo" />
-        <p><a href="/ezifhzrjighqe">© 2020 Kasa. All rights reserved</a></p>
+
+        <a href="/">
+            <Image 
+                src={logoFooter} 
+                alt="kasa-app-footer-logo" 
+                className="Footer-logo" />
+        </a>
+
+        <p>
+          <a href="/ezifhzrjighqe">© 2020 Kasa. All rights reserved</a>
+        </p>
+
       </footer>
     );
   };

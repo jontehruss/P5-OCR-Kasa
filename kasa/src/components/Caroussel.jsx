@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
+import Image from "./Image";
 
 export default function Caroussel({ pictures }) {
     // pour connaître l'état du Caroussel (index de l'image affichée) 
@@ -63,12 +64,14 @@ export default function Caroussel({ pictures }) {
             <div className="Caroussel-image-container">
                 <div className="Caroussel-image-container">
                     {pictures.map((picture, index) => (
-                        <img
-                            key={index}
+
+                        <Image
+                        key={index}
                             src={picture}
                             alt={`Vue intérieure du logement ${index + 1}`}
                             className={`Caroussel-image ${index === currentIndex ? 'visible' : 'hidden'} ${isTransitioning ? 'transitioning' : ''}`}
                         />
+                        
                     ))}
                 </div>
 

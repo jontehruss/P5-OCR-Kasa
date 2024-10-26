@@ -1,5 +1,5 @@
 // Import components
-import TopBannerImage from "../components/TopBannerImage";
+import Image from "../components/Image";
 import Wrap from "../components/Wrap";
 
 //Import Datas
@@ -19,7 +19,7 @@ function About() {
         <div className="About">
 
             <div className="About-top-banner">
-                <TopBannerImage className="Top-pic-banner" src={ImageSrc} alt="Illustration photo montagne" height={250} width={1240} text="Chez vous, partout et ailleurs" />
+                <Image className="Top-pic-banner" src={ImageSrc} alt="Illustration photo montagne" height={250} width={1240} text="Chez vous, partout et ailleurs" />
             </div>
 
 

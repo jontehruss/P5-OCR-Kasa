@@ -17,6 +17,7 @@ function Wrap({ title, description, equipments, content }) {
         setIsOpen(!isOpen);
     };
 
+    // fonction pour identifier les hauteus de Wrap-content masquer/afficher
     useEffect(() => {
         if (isOpen) {
             setMaxHeight(`${contentRef.current.scrollHeight}px`); // définir le max-height à la hauteur du content

@@ -5,17 +5,18 @@ import "../styles/Header.css";
 import logo from "../assets/logo.svg";
 
 // Import components
+import Image from "./Image";
 import Nav from "./Nav";
 
 // Export component
-export default Header;
-
-
-function Header() {
+export default function Header() {
     return (
         <header className="App-header">
             <a href="/">
-              <img src={logo} className="App-logo" alt="logo" />  
+                <Image 
+                    src={logo} 
+                    alt="kasa-app-logo" 
+                    className="App-logo" />
             </a>
             <Nav />
         </header>

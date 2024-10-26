@@ -1,6 +1,9 @@
 // Import Style
 import "../styles/ItemCard.css";
 
+// Import components
+import Image from "./Image";
+
 // Outil de gestion/création de liens
 import { Link } from 'react-router-dom';
 
@@ -13,7 +16,10 @@ export default function ItemCard({ logement }) {
       {/* Utilisation de Link pour générer un lien dynamique vers le logement */}
       <Link to={`/place/${logement.id}`}>
         <h2>{logement.title}</h2>
-        <img src={logement.cover} alt={logement.title} />
+        <Image 
+          src={logement.cover} 
+          alt={logement.title}
+        />
       </Link>
     </div>
   );

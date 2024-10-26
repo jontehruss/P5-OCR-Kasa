@@ -2,8 +2,8 @@ import "../styles/Host.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
-export default function Host({ name, picture, rating }) {
 
+export default function Host({ name, picture, rating }) {
 
     // initialiser les variables
     const maxRating = 5;
