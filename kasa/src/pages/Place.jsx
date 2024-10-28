@@ -36,7 +36,7 @@ export default function Place() {
             <div className='Place-infos'>
                 <div>
                     <h1>{logement.title}</h1>
-                    <span>{logement.location}</span>
+                    <span className="Place-location">{logement.location}</span>
                     <Tags tags={logement.tags} />
                 </div>
                 <div className='Host-info-container'>

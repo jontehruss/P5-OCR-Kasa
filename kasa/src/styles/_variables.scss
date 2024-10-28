@@ -1,11 +1,15 @@
 // variables globales
+
+$font-primary: 'Montserrat', sans-serif; 
+
+$invisible-color:#ffffff00;
 $primary-color: #ff6060;
 $secondary-color: #ffffff;
 $third-color: #f6f6f6;
 $fourth-color: #000000;
 $text-color: #333333;
 $item-light-color : #e3e3e3;
-$background-contrast:  rgba(0, 0, 0, 0.5);
+$background-contrast:  rgba(0, 0, 0, 0.65);
 $background-contrast-light:  rgba(0, 0, 0, 0.3);
 $background-transparent: rgba(0, 0, 0, 0);
 $top-banner-home: url('../assets/img-banner-a-accueil.png');

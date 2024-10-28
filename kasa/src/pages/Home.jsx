@@ -22,7 +22,7 @@ function Home() {
                     height={250}
                     width={1240} text="Chez vous, partout et ailleurs"
                 />
-                <h1>Chez vous, partout et ailleurs</h1>
+                <h1>Chez vous,<span className="Mobile-break"> partout et ailleurs</span></h1>
             </div>
 
             <Catalog />

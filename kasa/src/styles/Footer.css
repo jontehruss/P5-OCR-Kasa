@@ -4,12 +4,16 @@
   width: 100vw;
   margin-left: calc(-50vw + 49.3%);
   padding: 20px 0;
+  font-size: 1.2rem;
   text-align: center;
 }
 @media (max-width: 600px) {
   .App-footer {
     margin-left: calc(-50vw + 50%);
     height: 210px;
+  }
+  .App-footer .Mobile-break {
+    display: block;
   }
 }
 .App-footer .Footer-logo {

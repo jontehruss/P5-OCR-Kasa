@@ -44,7 +44,7 @@
 }
 @media (max-width: 600px) {
   .About .About-wrap h2 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }
 .About .About-wrap .Wrap-content {
@@ -52,11 +52,12 @@
   font-size: 1.4rem;
 }
 .About .About-wrap .Wrap-content p {
+  padding: 20px 10px;
   margin: 0;
 }
 @media (max-width: 600px) {
   .About .About-wrap .Wrap-content p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
 

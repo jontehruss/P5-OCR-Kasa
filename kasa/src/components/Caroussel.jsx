@@ -53,7 +53,7 @@ export default function Caroussel({ pictures }) {
                         <FontAwesomeIcon icon={faChevronLeft} />
                     </button>
 
-                    <span>{currentIndex + 1} / {pictures.length}</span>
+                    <span className="Caroussel-index">{currentIndex + 1} / {pictures.length}</span>
 
                     <button className="Caroussel-btn right" onClick={nextImage}>
                         <FontAwesomeIcon icon={faChevronRight} />

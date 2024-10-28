@@ -42,19 +42,38 @@
   border: none;
   border-radius: 50%;
   width: 90px;
-  height: 90px;
   font-size: 4rem;
   cursor: pointer;
   z-index: 2;
 }
+@media (max-width: 600px) {
+  .Caroussel .Caroussel-btn {
+    font-size: 2rem;
+  }
+}
 .Caroussel .Caroussel-btn:hover {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.65);
+}
+@media (max-width: 600px) {
+  .Caroussel .Caroussel-btn:hover {
+    background-color: rgba(255, 255, 255, 0);
+  }
 }
 .Caroussel .Caroussel-btn.left {
   left: 10px;
 }
+@media (max-width: 600px) {
+  .Caroussel .Caroussel-btn.left {
+    left: -25px;
+  }
+}
 .Caroussel .Caroussel-btn.right {
   right: 10px;
+}
+@media (max-width: 600px) {
+  .Caroussel .Caroussel-btn.right {
+    right: -25px;
+  }
 }
 .Caroussel span {
   position: absolute;
@@ -66,6 +85,11 @@
   color: #ffffff;
   padding: 5px 10px;
   z-index: 2;
+}
+@media (max-width: 600px) {
+  .Caroussel span {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=Caroussel.css.map */

@@ -25,7 +25,7 @@ export default function Host({ name, picture, rating }) {
     return (
         <div className='Place-host' >
             <div className='Host'>
-                <span>{name}</span>
+                <span className="Host-name">{name}</span>
                 <img className="Host-picture" src={picture} />
             </div>
 

@@ -20,12 +20,13 @@
     font-size: 1.8rem;
   }
 }
-.Place span {
+.Place .Place-location {
+  color: #000000;
   font-weight: 500;
   font-size: 1.2rem;
 }
 @media (max-width: 600px) {
-  .Place span {
+  .Place .Place-location {
     font-size: 1.3rem;
     font-weight: 400;
   }
@@ -74,18 +75,18 @@
 }
 @media (max-width: 600px) {
   .Wrap-container .Wrap .Wrap-content {
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding: 0 15px;
   }
 }
 .Wrap-container .Wrap .Wrap-content ul {
   list-style: none;
-  padding-inline-start: 10px;
+  padding-inline-start: 0px;
   line-height: 1.8rem;
 }
 @media (max-width: 600px) {
   .Wrap-container .Wrap .Wrap-content ul {
-    line-height: 1.6rem;
+    line-height: 1.3rem;
   }
 }
 

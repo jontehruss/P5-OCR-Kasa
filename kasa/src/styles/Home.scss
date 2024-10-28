@@ -6,6 +6,7 @@
   @include mobile {
     background-color: $third-color;
   }
+
   background-color: $secondary-color;
   margin: 0px 15px;
 
@@ -16,25 +17,29 @@
     justify-content: center;
     position: relative; // positionner le texte relativement au container
 
-
-
     h1 {
 
       @include mobile {
         text-align: left;
         top: 0%;
         left: 0%;
-        transform: translate(5%, 0%);
-        font-size: 2.1rem;
+        transform: translate(4%, 30%);
+        font-size: 1.8rem;
         margin: 5px 10px;
+
+        .Mobile-break {
+          display:block;
+        }
+
       }
 
+      width: max-content;
       position: absolute; // positionner par rapport au conteneur parent
-      top: 50%;
+      top: 40%;
       left: 50%;
       transform: translate(-50%, -50%);
       color: $secondary-color;
-      font-size: 2rem;
+      font-size: 2.8rem;
       font-weight: bold;
       text-align: center;
       text-shadow: 2px 2px 4px $background-contrast;
@@ -59,22 +64,3 @@
     
   }
 }
-
-// .Home-catalog {
-
-//   @include mobile {
-//     flex-direction: column;
-//     padding: 45px 10px 10px 10px;
-//     margin : 10px 0px;
-//   }
-
-//   display: flex;
-//   flex-direction: row;
-//   flex-wrap: wrap;
-//   justify-content: flex-start;
-//   background-color: $third-color;
-//   color: $secondary-color;
-//   margin : 30px 0px;
-//   padding: 45px 0px 35px 30px;
-//   border-radius: 25px;
-// }

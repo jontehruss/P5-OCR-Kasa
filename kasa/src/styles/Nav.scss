@@ -7,9 +7,11 @@
     display: flex;
     flex-direction: row;
     list-style-type: none;
+    padding:0px;
+    text-align: right;
 
     li {
-        margin: 10px;
+        margin: 10px 20px 10px 0px;
 
         a {
             text-decoration: none;

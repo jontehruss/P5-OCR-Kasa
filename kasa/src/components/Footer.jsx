@@ -19,7 +19,7 @@ export default function Footer() {
           className="Footer-logo" />
       </a>
 
-      <p>© 2020 Kasa. All rights reserved</p>
+      <p>© 2020 Kasa. All <span className="Mobile-break">rights reserved</span></p>
 
     </footer>
   );
