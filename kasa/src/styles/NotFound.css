@@ -6,20 +6,46 @@
   width: 100%;
 }
 .NotFound-container img {
-  width: 40%;
-  margin: 50px 0px;
+  width: 45%;
+  margin-top: 140px;
+}
+@media (max-width: 600px) {
+  .NotFound-container img {
+    margin-top: 110px;
+    margin-bottom: 110px;
+  }
 }
 .NotFound-container span {
-  margin: 0px 0px 50px 0px;
-  font-weight: 600;
-  font-size: 1.4rem;
+  margin-top: 140px;
+  font-weight: 400;
+  font-size: 1.8rem;
   color: #ff6060;
 }
+@media (max-width: 600px) {
+  .NotFound-container span {
+    margin-top: 0px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;
+  }
+  .NotFound-container span .Mobile-break {
+    display: block;
+  }
+}
 .NotFound-container a {
-  margin: 0px 0px 50px 0px;
+  margin-top: 140px;
+  margin-bottom: 140px;
   font-weight: 300;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: #000000;
+}
+@media (max-width: 600px) {
+  .NotFound-container a {
+    margin-top: 110px;
+    margin-bottom: 110px;
+    font-size: 1rem;
+    font-weight: 500;
+  }
 }
 
 /*# sourceMappingURL=NotFound.css.map */

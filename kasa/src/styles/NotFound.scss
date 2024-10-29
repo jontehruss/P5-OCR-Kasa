@@ -2,29 +2,53 @@
 @import 'variables';
 @import 'mixins';
 
-.NotFound-container{
+.NotFound-container {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
 
     img {
-        width: 40%;
-        margin: 50px 0px;
+        @include mobile {
+            margin-top: 110px;
+            margin-bottom: 110px;
+        }
+
+        width: 45%;
+        margin-top: 140px;
     }
 
     span {
-        margin: 0px 0px 50px 0px;
-        font-weight: 600;
-        font-size: 1.4rem;
+        @include mobile {
+            margin-top: 0px;
+            font-size: 1.3rem;
+            font-weight: 500;
+            text-align: center;
+
+            .Mobile-break {
+                display: block;
+            }
+        }
+
+        margin-top: 140px;
+        font-weight: 400;
+        font-size: 1.8rem;
         color: $primary-color;
     }
 
     a {
-        margin: 0px 0px 50px 0px;
+        @include mobile {
+            margin-top: 110px;
+            margin-bottom: 110px;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        margin-top: 140px;
+        margin-bottom: 140px;
         font-weight: 300;
-        font-size: 0.9rem;
+        font-size: 1.2rem;
         color: $fourth-color;
     }
 }

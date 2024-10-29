@@ -33,6 +33,9 @@
   transition: opacity 0.7s ease, transform 0.7s ease;
   transform: scale(1.02);
 }
+.Caroussel .Caroussel-index {
+  font-size: 1.1rem;
+}
 .Caroussel .Caroussel-btn {
   position: absolute;
   top: 50%;
