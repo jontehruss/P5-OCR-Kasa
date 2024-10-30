@@ -63,12 +63,12 @@
     cursor: pointer;
     z-index: 2;
 
-    &:hover {
-      @include mobile {
-        background-color: $invisible-color;
-      }
-      background-color: $background-contrast;
-    }
+    // &:hover {
+    //   @include mobile {
+    //     background-color: $invisible-color;
+    //   }
+    //   background-color: $background-contrast;
+    // }
 
     &.left {
       @include mobile {
